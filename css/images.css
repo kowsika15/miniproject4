@@ -1,0 +1,50 @@
+.library-visual {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 0 24px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #e8dccb;
+    box-shadow: 0 8px 24px rgba(48, 34, 22, 0.12);
+}
+
+.library-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.library-visual--short img {
+    height: auto;
+}
+
+.brand-logo {
+    display: block;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-visuals {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.about-visuals img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .about-visuals {
+        grid-template-columns: 1fr;
+    }
+
+}
